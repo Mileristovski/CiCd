@@ -13,8 +13,8 @@ Ce projet sert de Workbench pour expérimenter et rechercher différents algorit
 ## Utilisation
 1. Cloner le dépôt :
    ```bash
-   git clone <URL_DU_REPO>
-   cd <NOM_DU_REPO>
+   git clone https://github.com/Mileristovski/MachineLearning-Workbench.git
+   cd MachineLearning-Workbench
    ```
 2. Installer les dépendances :
    ```bash
