@@ -1,15 +1,13 @@
-# Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
-# Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
 COPY . /app
 
-# Install any needed packages specified in requirements.txt
-RUN pip install -U scikit-learn
-RUN pip install pandas Flask
+RUN python -m pip install --upgrade pip && \
+    python -m pip install -U scikit-learn 
+RUN python -m pip install pandas Flask
 
-# Command to run your application
-CMD ["python", "main.py"]
+COPY . /app
+
+CMD ["python", "app.py"]

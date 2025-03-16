@@ -10,7 +10,7 @@ from sklearn.metrics import mean_squared_error
 
 
 def load_and_preprocess_data():
-    df = pd.read_csv('Food_Delivery_Times.csv')
+    df = pd.read_csv('./data/Food_Delivery_Times.csv')
     
     print(df.head())
     
